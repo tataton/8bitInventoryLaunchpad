@@ -3,7 +3,12 @@
 
 Updating the earlier "Do You Have This?" project with persistent data.
 
-
+Technologies
+------------
+* JQuery
+* HTML
+* JavaScript
+* SQL
 
 Database
 --------
