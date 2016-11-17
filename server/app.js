@@ -23,7 +23,7 @@ app.post( '/addItem', urlEncodedParser, function( req, res ){
 }); // end addItem route
 
 // get all objects in the inventory
-app.get( '/getInventory', urlEncodedParser, function( req, res ){
+app.get( '/getInventory', function( req, res ){
   console.log( 'getInventory route hit' );
   // get all items in the table and return them to client
 }); // end addItem route
