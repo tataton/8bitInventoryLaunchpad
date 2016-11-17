@@ -16,5 +16,17 @@ app.get( '/', function( req, res ){
   res.sendFile( path.resolve( 'views/index.html' ) );
 }); // end home base
 
+// add new objects to the inventory
+app.post( '/addItem', urlEncodedParser, function( req, res ){
+  console.log( 'addItem route hit:', req.body );
+  // add the item from req.body to the table
+}); // end addItem route
+
+// get all objects in the inventory
+app.get( '/getInventory', urlEncodedParser, function( req, res ){
+  console.log( 'getInventory route hit' );
+  // get all items in the table and return them to client
+}); // end addItem route
+
 // static folder
 app.use( express.static( 'public' ) );
