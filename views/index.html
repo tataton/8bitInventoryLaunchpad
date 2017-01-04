@@ -2,11 +2,23 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>8-Bit Inventory Launchpad</title>
-    <script src="vendors/jquery-3.0.0.min.js" charset="utf-8"></script>
+    <title>Does Dev Have This Scarf?</title>
+    <script src="vendors/jquery-3.1.1.min.js" charset="utf-8"></script>
     <script src="scripts/8bitInventory.js" charset="utf-8"></script>
   </head>
   <body>
-    <h1>8-Bit Inventory Launchpad</h1>
+    <section>
+      <h1>Does Dev Have This Scarf?</h1>
+      <p>How would you like to interact with Dev's scarf inventory?</p>
+      <form id="interactOptions">
+        <input type="radio" name="interactOptions" value="show-scarves">Show all of Dev's scarves</input>
+        <input type="radio" name="interactOptions" value="search-scarf">Search Dev's scarves by characteristic</input>
+        <input type="radio" name="interactOptions" value="add-scarf">Add a scarf to Dev's inventory</input>
+        <input type="radio" name="interactOptions" value="modify-scarf">Modify one of Dev's scarves</input>
+        <input type="radio" name="interactOptions" value="delete-scarf">Delete one of Dev's scarves</input>
+      </form>
+    </section>
+    <section></section>
+    <section id="results"></section>
   </body>
 </html>
